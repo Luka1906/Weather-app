@@ -1,3 +1,14 @@
 <%- include ("partials/header.ejs") -%>
-<p>Luka car</p>
-<%- footer ("partials/footer.ejs") -%>
+<form action="/add" method="post">
+<input type="text" name="city" placeholder="Enter Location">
+<div id="weather-display">
+<% if (locals.data) { %>
+    <p><%= data.current.temp%></p>
+    <% } else { %>
+        <p><%= locals.error %></p>
+        <% } %>
+</div>
+
+</form>
+
+<%- include ("partials/footer.ejs") -%>
