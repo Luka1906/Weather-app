@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+height: 20vh;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.input-area {
+  display: flex;
+  gap: 1rem;
+}
+.search-input {
+  padding: 0.35rem;
+  border: 0.5px solid rgb(40, 40, 40);
+  border-radius: 0.3rem;
+}
+#weather-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  height: 60vh;
+}
+
+.central {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+
+}
+
+.aside-left {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.aside-right,
+.additional-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.city {
+  font-size: 1.5rem;
+}
+.weather-info {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.image-temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cel,
+.far {
+  cursor: pointer;
+}
+.temp {
+  font-size: 2.8rem;
+}
+
+.cel-active,
+.far-active {
+  color: rgb(136, 136, 136);
+  cursor: default;
+}
+
+.hideFarrenheit {
+  display: none;
+  cursor: default;
+}
+.hideCelsius {
+  display: none;
+}
+/* img {
+    border:2px solid red
+} */
+.weekly-forecast {
+  display: flex;
+  gap: 1rem;
+}
+
+.daily-temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.min-max {
+  display: flex;
+  gap: 0.5rem;
+}
